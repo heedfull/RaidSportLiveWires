@@ -3,4 +3,4 @@ npm-debug.log
 tmp
 /.sass-cache/
 **/.DS_Store
-**/*.zip 
+*.zip 
