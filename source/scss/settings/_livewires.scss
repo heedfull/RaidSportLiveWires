@@ -8,10 +8,10 @@
   p,
   li,
   dd {
-    line-height: 1.25;
-    letter-spacing:-0.1em;
-    word-spacing: -0.9em;
-    font-family: "BLOKKNeue";
+    // line-height: 1.25;
+    // letter-spacing:-0.1em;
+    // word-spacing: -0.9em;
+    font-family: "Redacted Script";
     color: #BABAAE;
 
     > * {
@@ -20,6 +20,10 @@
     }
 
   }
+}
+
+p.content {
+  font-family: "Redacted Script"
 }
 
 // Force clear text
