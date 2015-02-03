@@ -16,6 +16,8 @@ module.exports = function(grunt) {
       dist: {
         options: {
           style: 'expanded',
+          sourcemap: true,
+          lineNumbers:true
         },
         files: {
           'httpdocs/css/app.css': 'source/scss/app.scss',
@@ -65,7 +67,7 @@ module.exports = function(grunt) {
     watch: {
       sass: {
         files: [ '**/*.scss'],
-        tasks: ['sass','autoprefixer','cssmin']
+        tasks: ['sass','autoprefixer']//,'cssmin']
       },
       coffee: {
         files: [ '**/*.coffee' ],
