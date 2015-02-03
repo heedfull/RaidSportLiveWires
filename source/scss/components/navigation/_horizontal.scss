@@ -14,6 +14,12 @@
     @extend %group;
     padding:0;
     margin-bottom: 0;
+    max-height: 0;
+    overflow: hidden;
+
+      &.opened {
+      max-height: 2000px;
+    }
   }
   li {
     display: block;
