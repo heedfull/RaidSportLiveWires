@@ -13,12 +13,12 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     sass: {
-      dist: {
-        options: {
+      options: {
           style: 'expanded',
           sourcemap: true,
           lineNumbers:true
         },
+      dist: {
         files: {
           'httpdocs/css/app.css': 'source/scss/app.scss',
           'httpdocs/css/guide.css': 'source/scss/pages/guide.scss'
@@ -66,7 +66,7 @@ module.exports = function(grunt) {
     },
     watch: {
       sass: {
-        files: [ '**/*.scss'],
+        files: [ 'source/scss/**/*.scss'],
         tasks: ['sass','autoprefixer']//,'cssmin']
       },
       coffee: {
@@ -161,7 +161,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-nodeunit');
-  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-coffee');
   grunt.loadNpmTasks('grunt-contrib-uglify');
