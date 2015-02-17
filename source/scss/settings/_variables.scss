@@ -7,7 +7,7 @@
 //   Base sizing
 //   ========================================================================== */
 $base: 16; // Set the html base font size (in px). We recommend keep this at 16.
-$line: 24; // Set the baseline grid (in px) Also determines gutter width.
+$line: 18*1.618; // Set the baseline grid (in px) Also determines gutter width.
 
 
 ///* =============================================================================
@@ -31,6 +31,8 @@ $serif: Georgia, serif;
 $sans: sans-serif;
 $mono: monospace;
 
+$PTSansNarrow: "PT Sans Narrow" "Arial Narrow",Arial,sans-serif;
+$OpenSans: "Open Sans", sans-serif;
 
 ///* =============================================================================
 //   Paragraph defaults
