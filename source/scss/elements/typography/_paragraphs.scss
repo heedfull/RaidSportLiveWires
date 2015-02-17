@@ -4,8 +4,8 @@
 // http://modularscale.com  |  https://vimeo.com/17079380
 
 body {
-  @include font-size;
-  font-family: $serif;
+  @include font-size(18, $line);
+  font-family: $PTSansNarrow;
 }
 
 p {
@@ -14,7 +14,7 @@ p {
 }
 
 .lead {
-  @include font-size(18, $line); // using the $line variable makes it easy to stick to a baseline grid.
+  @include font-size(20, $line); // using the $line variable makes it easy to stick to a baseline grid.
 }
 
 .tagline {
