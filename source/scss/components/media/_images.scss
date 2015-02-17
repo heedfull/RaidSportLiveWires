@@ -26,7 +26,7 @@ figure {
   }
 }
 figcaption {
-
+  padding: rem($line/2) 0;
   .source {
     // Stack caption source on mobile sizes
     display: block;
