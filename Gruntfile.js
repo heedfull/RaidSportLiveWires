@@ -75,13 +75,23 @@ module.exports = function(grunt) {
       },
       gruntfile: {
         files: ['Gruntfile.js']
+      }//,
+      // livereload: {
+      //   options: { livereload: true },
+      //   files: ['httpdocs/**/*']
+      // }
+    },
+    browserSync: {
+      bsFiles: {
+        src : ['httpdocs/*.html','httpdocs/css/*.css','httpdocs/js/*.js']
       },
-      livereload: {
-        options: { livereload: true },
-        files: ['httpdocs/**/*']
+      options: {
+        server: {
+            baseDir: "httpdocs/"
+        },
+        watchTask: true
       }
     },
-
     jshint: {
       all: [
         'Gruntfile.js',
@@ -101,15 +111,15 @@ module.exports = function(grunt) {
         // Change this to '0.0.0.0' to access the server from outside
         hostname: 'localhost'
       },
-      livereload: {
-        options: {
-          open: true,
-          base: [
-            'source',
-            'httpdocs'
-          ]
-        }
-      },
+      // livereload: {
+      //   options: {
+      //     open: true,
+      //     base: [
+      //       'source',
+      //       'httpdocs'
+      //     ]
+      //   }
+      // },
       test: {
         options: {
           port: 9001,
@@ -175,9 +185,10 @@ module.exports = function(grunt) {
   // By default, lint and run all tests.
   grunt.registerTask('default', ['jshint', 'test', 'autoprefixer']);
 
-  grunt.registerTask('server', ['connect', 'watch']);
+  grunt.registerTask('server', ['connect', 'browserSync', 'watch']);
 
   // Watch tasks
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-browser-sync');
 
 };

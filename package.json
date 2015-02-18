@@ -31,6 +31,7 @@
     "grunt": "~0.4.2",
     "grunt-autoprefixer": "^0.7.2",
     "grunt-available-tasks": "^0.4.3",
+    "grunt-browser-sync": "^2.0.0",
     "grunt-contrib-clean": "~0.4.0",
     "grunt-contrib-coffee": "~0.10.1",
     "grunt-contrib-concat": "^0.3.0",
