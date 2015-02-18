@@ -1460,7 +1460,10 @@ a.button--disabled, a.button--disabled:hover, a.button--disabled:active, a.butto
   position: relative; }
 
 .product--price {
-  display: inline-block; }
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.82025rem; }
 
 .content p, .content li, .content dd {
   font-family: "Redacted Script";

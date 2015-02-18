@@ -92,7 +92,11 @@ transform: skew(-15deg) rotate(-15deg);
 }
 
 .product--price{
-  display:inline-block;
+  // display:inline-block;
+  width: 25%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: rem($line);
   // transform: skew(-15deg) rotate(-15deg);
   //clear: left;
   // z-index:100;
