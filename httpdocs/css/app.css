@@ -59,7 +59,7 @@
 .pull-left, .face {
   float: left; }
 
-.clear {
+.clear, .product_title {
   clear: both; }
 
 .group, .clearfix, .button-group, .pill-buttons, .field, .field--check label, .switch, .horizontal-nav ul, .vertical-nav, .pagination, .callout, .callout .content, .drawer, fieldset, legend, .row {
@@ -1464,6 +1464,13 @@ a.button--disabled, a.button--disabled:hover, a.button--disabled:active, a.butto
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 1.82025rem; }
+
+.single-product div.product .images .thumbnails a {
+  display: block;
+  width: 33.3%;
+  margin-right: 3.8%;
+  float: left;
+  margin-bottom: 1em; }
 
 .content p, .content li, .content dd {
   font-family: "Redacted Script";

@@ -111,3 +111,14 @@ transform: skew(-15deg) rotate(-15deg);
   // text-align: left;
 }
 
+.single-product div.product .images .thumbnails a {
+  display: block;
+  width: 33.3%;
+  margin-right: 3.8%;
+  float: left;
+  margin-bottom: 1em;
+}
+
+.product_title{
+  @extend .clear
+}
