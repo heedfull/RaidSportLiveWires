@@ -1457,7 +1457,9 @@ a.button--disabled, a.button--disabled:hover, a.button--disabled:active, a.butto
   padding-right: 2.7777777778%; }
 
 .product {
-  position: relative; }
+  position: relative;
+  padding-left: 2.7777777778%;
+  padding-right: 2.7777777778%; }
 
 .product--price {
   width: 25%;
@@ -1471,6 +1473,12 @@ a.button--disabled, a.button--disabled:hover, a.button--disabled:active, a.butto
   margin-right: 3.8%;
   float: left;
   margin-bottom: 1em; }
+
+.product_features {
+  padding-left: 5.5555555556%;
+  padding-right: 5.5555555556%;
+  list-style-type: disc;
+  list-style-position: outside; }
 
 .content p, .content li, .content dd {
   font-family: "Redacted Script";

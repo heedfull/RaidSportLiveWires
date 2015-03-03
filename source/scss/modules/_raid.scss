@@ -89,6 +89,8 @@ transform: skew(-15deg) rotate(-15deg);
 .product{
   // text-align: left;
   position: relative;
+  padding-left: $margin/2;
+  padding-right: $margin/2;
 }
 
 .product--price{
@@ -121,4 +123,11 @@ transform: skew(-15deg) rotate(-15deg);
 
 .product_title{
   @extend .clear
+}
+
+.product_features{
+  padding-left: $margin;
+  padding-right: $margin;
+  list-style-type: disc;
+  list-style-position: outside;
 }
