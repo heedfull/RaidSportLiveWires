@@ -84,6 +84,20 @@
   }
 }
 
+.main{
+  .product{
+    @include breakpoint($baby){
+      width:50%;
+    }
+    @include breakpoint($mama){
+      width:$c3;
+    }
+    @include breakpoint($papa){
+      width:$c4;
+    }
+  }
+}
+
 .product{
   font-size: 18px;
   font-size: 1.125rem;
@@ -91,17 +105,31 @@
   position: relative;
   padding-left: $margin/2;
   padding-right: $margin/2;
+}
+
+
+.product-images{
   @include breakpoint($baby){
-    width:50%;
+    @include gutter;
+    width: 50%;
+    display:inline-block;
+    float: left;
   }
   @include breakpoint($mama){
-    width:$c3;
-  }
-  @include breakpoint($papa){
-    width:$c4;
+    width: $c3;
   }
 }
 
+.product_details{
+  float: left;
+  @include breakpoint($baby){
+    width: 50%;
+    @include gutter;
+  }
+  @include breakpoint($mama){
+    width: 2*$c3;
+  }
+}
 
 .product--price{
   width: 25%;
@@ -110,7 +138,7 @@
   margin-bottom: rem($line);
 }
 
-.single-product div.product .images .thumbnails a {
+.single-product div.product .product-images .thumbnails a {
   display: block;
   width: 33.3%;
   margin-right: 3.8%;
@@ -118,8 +146,15 @@
   margin-bottom: 1em;
 }
 
+
+
 .product_title{
-  @extend .clear
+  @include breakpoint($baby){
+    // float: left;
+    // display: inline-block;
+    // width: 50%;
+    @extend %group;
+  }
 }
 
 .product_features{

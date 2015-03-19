@@ -59,15 +59,15 @@
 .pull-left, .face {
   float: left; }
 
-.clear, .product_title {
+.clear {
   clear: both; }
 
-.group, .clearfix, .button-group, .pill-buttons, .field, .field--check label, .switch, .horizontal-nav ul, .vertical-nav, .pagination, .callout, .callout .content, .drawer, fieldset, legend, .row {
+.group, .clearfix, .button-group, .pill-buttons, .field, .field--check label, .switch, .horizontal-nav ul, .vertical-nav, .pagination, .callout, .callout .content, .drawer, fieldset, legend, .row, .product_title {
   zoom: 1; }
-  .group:before, .clearfix:before, .button-group:before, .pill-buttons:before, .field:before, .field--check label:before, .switch:before, .horizontal-nav ul:before, .vertical-nav:before, .pagination:before, .callout:before, .callout .content:before, .drawer:before, fieldset:before, legend:before, .row:before, .group:after, .clearfix:after, .button-group:after, .pill-buttons:after, .field:after, .field--check label:after, .switch:after, .horizontal-nav ul:after, .vertical-nav:after, .pagination:after, .callout:after, .callout .content:after, .drawer:after, fieldset:after, legend:after, .row:after {
+  .group:before, .clearfix:before, .button-group:before, .pill-buttons:before, .field:before, .field--check label:before, .switch:before, .horizontal-nav ul:before, .vertical-nav:before, .pagination:before, .callout:before, .callout .content:before, .drawer:before, fieldset:before, legend:before, .row:before, .product_title:before, .group:after, .clearfix:after, .button-group:after, .pill-buttons:after, .field:after, .field--check label:after, .switch:after, .horizontal-nav ul:after, .vertical-nav:after, .pagination:after, .callout:after, .callout .content:after, .drawer:after, fieldset:after, legend:after, .row:after, .product_title:after {
     content: " ";
     display: table; }
-  .group:after, .clearfix:after, .button-group:after, .pill-buttons:after, .field:after, .field--check label:after, .switch:after, .horizontal-nav ul:after, .vertical-nav:after, .pagination:after, .callout:after, .callout .content:after, .drawer:after, fieldset:after, legend:after, .row:after {
+  .group:after, .clearfix:after, .button-group:after, .pill-buttons:after, .field:after, .field--check label:after, .switch:after, .horizontal-nav ul:after, .vertical-nav:after, .pagination:after, .callout:after, .callout .content:after, .drawer:after, fieldset:after, legend:after, .row:after, .product_title:after {
     clear: both; }
 
 .text-left {
@@ -1458,6 +1458,16 @@ a.button--disabled, a.button--disabled:hover, a.button--disabled:active, a.butto
       .section .product--img {
         max-height: 20em; } }
 
+@media all and (min-width: 32em) {
+  .main .product {
+    width: 50%; } }
+@media all and (min-width: 50em) {
+  .main .product {
+    width: 33.3333333333%; } }
+@media all and (min-width: 64em) {
+  .main .product {
+    width: 25%; } }
+
 .product {
   font-size: 18px;
   font-size: 1.125rem;
@@ -1465,15 +1475,28 @@ a.button--disabled, a.button--disabled:hover, a.button--disabled:active, a.butto
   position: relative;
   padding-left: 2.7777777778%;
   padding-right: 2.7777777778%; }
+
+@media all and (min-width: 32em) {
+  .product-images {
+    padding-left: 0.910125rem;
+    padding-right: 0.910125rem;
+    width: 50%;
+    display: inline-block;
+    float: left; } }
+@media all and (min-width: 50em) {
+  .product-images {
+    width: 33.3333333333%; } }
+
+.product_details {
+  float: left; }
   @media all and (min-width: 32em) {
-    .product {
-      width: 50%; } }
+    .product_details {
+      width: 50%;
+      padding-left: 0.910125rem;
+      padding-right: 0.910125rem; } }
   @media all and (min-width: 50em) {
-    .product {
-      width: 33.3333333333%; } }
-  @media all and (min-width: 64em) {
-    .product {
-      width: 25%; } }
+    .product_details {
+      width: 66.6666666667%; } }
 
 .product--price {
   width: 25%;
@@ -1481,7 +1504,7 @@ a.button--disabled, a.button--disabled:hover, a.button--disabled:active, a.butto
   margin-right: auto;
   margin-bottom: 1.82025rem; }
 
-.single-product div.product .images .thumbnails a {
+.single-product div.product .product-images .thumbnails a {
   display: block;
   width: 33.3%;
   margin-right: 3.8%;
