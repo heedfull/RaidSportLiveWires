@@ -161,7 +161,7 @@ a:active, a:hover {
  * contexts in Firefox 4+, Safari 5, and Chrome.
  */
 h1 {
-  font-size: 2em;
+  font-size: 2rem;
   margin: 0.67em 0; }
 
 /**
@@ -1418,48 +1418,62 @@ a.button--disabled, a.button--disabled:hover, a.button--disabled:active, a.butto
   border-color: #333333;
   box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.07), 1000px 0 0 980px black, -2px 0 10px 0 rgba(0, 0, 0, 0.07), -1000px 0 0 1000px #d13731; }
 
+.row--header {
+  text-align: center; }
+
+@media all and (min-width: 50em) {
+  .branding {
+    width: 50%;
+    display: inline;
+    float: left; } }
+
+.logo {
+  text-align: center; }
+
 .tagline {
   font-size: 18px;
   font-size: 1.125rem;
   line-height: 1.618;
   font-weight: 400;
-  text-align: center; }
+  text-align: center;
+  display: inline-block; }
+
+.horizontal-nav {
+  text-align: left; }
+  @media all and (min-width: 50em) {
+    .horizontal-nav {
+      margin-top: 75px;
+      text-align: center; }
+      .horizontal-nav .trigger {
+        display: none; }
+      .horizontal-nav ul {
+        max-height: none; } }
 
 .section {
+  font-size: 0;
   text-align: center; }
   .section .product--img {
-    max-width: 60%;
     max-height: 20em; }
     @media all and (min-width: 32em) {
       .section .product--img {
         max-height: 20em; } }
 
-.banner {
-  background-color: black;
-  color: white;
-  -webkit-transform: skew(-15deg) rotate(-15deg);
-  transform: skew(-15deg) rotate(-15deg); }
-
-.face {
-  margin: 0 2.7777777778%; }
-  @media all and (min-width: 32em) {
-    .face {
-      width: 50%; } }
-
-.face--img {
-  border-radius: 50%; }
-
-.face--caption {
-  text-align: center; }
-
-.footer a {
-  padding-left: 2.7777777778%;
-  padding-right: 2.7777777778%; }
-
 .product {
+  font-size: 18px;
+  font-size: 1.125rem;
+  display: inline-block;
   position: relative;
   padding-left: 2.7777777778%;
   padding-right: 2.7777777778%; }
+  @media all and (min-width: 32em) {
+    .product {
+      width: 50%; } }
+  @media all and (min-width: 50em) {
+    .product {
+      width: 33.3333333333%; } }
+  @media all and (min-width: 64em) {
+    .product {
+      width: 25%; } }
 
 .product--price {
   width: 25%;
@@ -1479,6 +1493,28 @@ a.button--disabled, a.button--disabled:hover, a.button--disabled:active, a.butto
   padding-right: 5.5555555556%;
   list-style-type: disc;
   list-style-position: outside; }
+
+.face {
+  margin: 0 2.7777777778%; }
+  @media all and (min-width: 32em) {
+    .face {
+      width: 50%; } }
+
+.face--img {
+  border-radius: 50%; }
+
+.face--caption {
+  text-align: center; }
+
+.footer a {
+  padding-left: 2.7777777778%;
+  padding-right: 2.7777777778%; }
+
+.banner {
+  background-color: black;
+  color: white;
+  -webkit-transform: skew(-15deg) rotate(-15deg);
+  transform: skew(-15deg) rotate(-15deg); }
 
 .content p, .content li, .content dd {
   font-family: "Redacted Script";

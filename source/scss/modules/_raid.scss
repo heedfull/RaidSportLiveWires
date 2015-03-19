@@ -35,82 +35,79 @@
   // Missing the no query fallbacks code
 }
 
-$mamabear: 32em;
+.row--header{
+  text-align: center;
+}
+
+.branding{
+  @include breakpoint($mama){
+    width:50%;
+    display: inline;
+    float:left;
+  }
+}
+
+.logo{
+  text-align: center;
+}
 
 .tagline{
   @include font-size(18);
   font-weight: 400;
   text-align: center;
+  display: inline-block;
+}
+
+.horizontal-nav {
+  text-align: left;
+  @include breakpoint($mama){
+    margin-top: 75px;
+    text-align: center;
+    .trigger {
+      display: none;
+    }
+    ul {
+      max-height: none;
+    }
+  }
 }
 
 .section 
 {
+  font-size: 0;
   text-align: center;
-  .product--img {
-    max-width: 60%;
+  .product--img{
     max-height: 20em;
-    @include breakpoint($mamabear){
+    @include breakpoint($baby){
       max-height: 20em;
     }
   }
 }
 
-.banner {
-  background-color: black;
-  color: white;
-//  display: inline-block;
-// padding: 0 $margin/4;
-transform: skew(-15deg) rotate(-15deg);
-}
-
-.face {
-  // width: 100%;
-  @extend .pull-left;
-  margin: 0 $margin/2;
-  // margin-bottom: rem($line);
-  @include breakpoint($mamabear){
-    width: 50%;
-  }
-}
-
-.face--img{
-  border-radius: 50%;
-}
-
-.face--caption{
-  text-align: center;
-}
-
-.footer a{
-  padding-left: $margin/2;
-  padding-right: $margin/2;
-}
-
 .product{
-  // text-align: left;
+  font-size: 18px;
+  font-size: 1.125rem;
+  display:inline-block;
   position: relative;
   padding-left: $margin/2;
   padding-right: $margin/2;
+  @include breakpoint($baby){
+    width:50%;
+  }
+  @include breakpoint($mama){
+    width:$c3;
+  }
+  @include breakpoint($papa){
+    width:$c4;
+  }
 }
 
+
 .product--price{
-  // display:inline-block;
   width: 25%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: rem($line);
-  // transform: skew(-15deg) rotate(-15deg);
-  //clear: left;
-  // z-index:100;
-  // position:absolute;    
-  // color:white;
-  //font-size:24px;
-  //font-weight:bold;
-  // left: 0px;
-  // width: 100%;
-  // top: 350px;
-  // background: black;
-  // text-align: left;
 }
 
 .single-product div.product .images .thumbnails a {
@@ -130,4 +127,31 @@ transform: skew(-15deg) rotate(-15deg);
   padding-right: $margin;
   list-style-type: disc;
   list-style-position: outside;
+}
+
+.face {
+  @extend .pull-left;
+  margin: 0 $margin/2;
+  @include breakpoint($baby){
+    width: 50%;
+  }
+}
+
+.face--img{
+  border-radius: 50%;
+}
+
+.face--caption{
+  text-align: center;
+}
+
+.footer a{
+  padding-left: $margin/2;
+  padding-right: $margin/2;
+}
+
+.banner {
+  background-color: black;
+  color: white;
+  transform: skew(-15deg) rotate(-15deg);
 }
