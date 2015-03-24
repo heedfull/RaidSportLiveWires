@@ -1448,7 +1448,11 @@ a.button--disabled, a.button--disabled:hover, a.button--disabled:active, a.butto
       .horizontal-nav .trigger {
         display: none; }
       .horizontal-nav ul {
-        max-height: none; } }
+        max-height: none; }
+      .horizontal-nav li {
+        border-left: 1px solid #ccc; }
+        .horizontal-nav li:nth-of-type(1) {
+          border-left: none; } }
 
 .section {
   font-size: 0;
